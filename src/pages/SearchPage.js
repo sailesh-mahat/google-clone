@@ -12,7 +12,7 @@ import RoomIcon from "@material-ui/icons/Room";
 import MoreVertIcon from "@material-ui/icons/MoreVert";
 
 function SearchPage() {
-    const [{ term }, dispatch] = useStateValue();
+    const [{ term }] = useStateValue();
     const { data } = useGoogleSearch(term);
 
     console.log(data);
