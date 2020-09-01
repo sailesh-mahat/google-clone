@@ -8,6 +8,7 @@ import { useStateValue } from "../StateProvider";
 import { actionTypes } from "../reducer";
 
 function Search({ hideButtons = false }) {
+    // eslint-disable-next-line 
     const [{}, dispatch] = useStateValue();
 
     const [input, setInput] =useState("");
